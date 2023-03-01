@@ -55,6 +55,7 @@ test("2 - 1 should return 1", () => {
   //assert
   expect(actual).toBe(1);
 });
+
 test("2 * 1 should return 2", () => {
   //arrange
   const num1 = 2;
@@ -65,6 +66,7 @@ test("2 * 1 should return 2", () => {
   //assert
   expect(actual).toBe(2);
 });
+
 test("2 / 1 should return 2", () => {
   //arrange
   const num1 = 2;
@@ -75,3 +77,15 @@ test("2 / 1 should return 2", () => {
   //assert
   expect(actual).toBe(2);
 });
+
+test("first letter of string should be capitalized", () => {
+  //arrange
+  const string = "christopher";
+  //act
+  const actual = capString(string);
+  //assert
+  expect(actual).toBe( "Christopher");
+});
+
+
+

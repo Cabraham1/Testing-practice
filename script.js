@@ -32,4 +32,9 @@ class Calculator {
   }
 }
 
-module.exports = { stringLength, reverseString, Calculator };
+const capString = (string) => {
+  const [first, ...rest] = string.split("");
+  return [first.toUpperCase(), ...rest].join("");
+};
+
+module.exports = { stringLength, reverseString, Calculator, capString };
