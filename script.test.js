@@ -55,3 +55,23 @@ test("2 - 1 should return 1", () => {
   //assert
   expect(actual).toBe(1);
 });
+test("2 * 1 should return 2", () => {
+  //arrange
+  const num1 = 2;
+  const num2 = 1;
+  //act
+  const calculator = new Calculator(num1, num2);
+  const actual = calculator.multiply();
+  //assert
+  expect(actual).toBe(2);
+});
+test("2 / 1 should return 2", () => {
+  //arrange
+  const num1 = 2;
+  const num2 = 1;
+  //act
+  const calculator = new Calculator(num1, num2);
+  const actual = calculator.divide();
+  //assert
+  expect(actual).toBe(2);
+});
