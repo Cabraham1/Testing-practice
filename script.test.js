@@ -25,3 +25,12 @@ test("Should return Error if string count isnt between 0 & 10", () => {
   //assert
   expect(actual).toThrowError();
 }); //this is a function that throws an error
+
+
+test('should reture reversed strings', () => {
+  const string = "hello world"
+
+  const actual = reverseString(string);
+  //assert
+  expect(actual).toBe(reverseString(string));
+})
